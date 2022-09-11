@@ -1,0 +1,47 @@
+package tes.adit;
+import java.util.Scanner;
+
+public class TesAdit {
+    public static void main(String[] args) {
+   
+        String nama;
+        System.out.print("Masukkan Nama Anda: ");
+        
+        Scanner input = new Scanner(System.in);
+        nama = input.nextLine();
+        
+        System.out.println("\nStok Gudang Input Barang");
+        System.out.println("#########################");
+        System.out.println("Selamat Datang " + nama + "!!");
+        
+        String namabarang;
+        int jumlahbarang;
+        float hargabeli;
+        float hargajual;
+        
+        System.out.print("Masukkan nama barang yang mau ditambah: ");
+        Scanner inputnamabarang = new Scanner(System.in);
+        namabarang = input.nextLine();
+        
+        System.out.print("Masukkan jumlah barang yang mau ditambah: ");
+        Scanner inputjumlahbarang = new Scanner(System.in);
+        jumlahbarang = input.nextInt();
+        
+        System.out.print("Masukkan harga beli untuk barang tersebut: ");
+        Scanner inputhargabeli = new Scanner(System.in);
+        hargabeli = input.nextFloat();
+        
+        System.out.print("Masukkan harga jual untuk barang tersbut: ");
+        Scanner inputhargajual = new Scanner(System.in);
+        hargajual = input.nextFloat();
+        
+        System.out.println("\nStok Gudang Rincian Barang");
+        System.out.println("##########################");
+        System.out.println("Nama Barang \t: " + namabarang);
+        System.out.println("Jumlah Barang \t: " + jumlahbarang);
+        System.out.printf("Harga beli \t: " + "%.2f",hargabeli);
+        System.out.printf("\nNama Barang \t: " + "%.2f", hargajual);
+        
+    }
+    
+}
